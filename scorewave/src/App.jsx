@@ -3,32 +3,42 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <p className="title">Score Card Application</p>
+      <div className="TeamNameContainer">
+        <div className="team1">India</div>
+        <div className="teams">VS</div>
+        <div className="team2">Pakistan</div>
+      </div>  
+      <div className="SummaryAndScorecardContainer">
+            <div>SUMMARY</div>
+            <div>SCORECARD</div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="Playerslist">
+        <div className="sctitles">
+          <div>R</div>
+          <div>B</div>
+          <div>4's</div>
+          <div>6's</div>
+          <div>S.R</div>
+        </div>
+                  <div>Sehwag</div>
+                  <div>Ghambir</div>
+                  <div>Kohli</div>
+                  <div>Yuvraj Singh</div>
+                  <div>Suresh Raina</div>
+                  <div>Yusuf Pathan</div>
+                  <div>Harbhajan Singh</div>
+                  <div>Zaheer Khan</div>
+                  <div>Ashish Nehra</div>
+                  <div>Ravi Ashwin</div>
+                  <div>S Sreesanth</div>
+                </div>
     </div>
   )
 }
+
 
 export default App
