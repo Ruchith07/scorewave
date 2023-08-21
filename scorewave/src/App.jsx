@@ -8,10 +8,11 @@ function App() {
     <div className="App">
       <p className="title">Score Card Application</p>
       <div className="TeamNameContainer">
-        <div className="team1">India</div>
-        <div className="teams">VS</div>
-        <div className="team2">Pakistan</div>
+        <div>India</div>
+        <div>VS</div>
+        <div>Pakistan</div>
       </div>  
+      <div className="Empty"></div>
       <div className="SummaryAndScorecardContainer">
             <div>SUMMARY</div>
             <div>SCORECARD</div>
@@ -35,7 +36,7 @@ function App() {
                   <div>Ashish Nehra</div>
                   <div>Ravi Ashwin</div>
                   <div>S Sreesanth</div>
-                </div>
+        </div>
     </div>
   )
 }

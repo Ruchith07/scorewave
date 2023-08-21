@@ -1,0 +1,13 @@
+<div className="Playerslist">
+                  <div>Sehwag</div>
+                  <div>Ghambir</div>
+                  <div>Kohli</div>
+                  <div>Yuvraj Singh</div>
+                  <div>Suresh Raina</div>
+                  <div>Yusuf Pathan</div>
+                  <div>Harbhajan Singh</div>
+                  <div>Zaheer Khan</div>
+                  <div>Ashish Nehra</div>
+                  <div>Ravi Ashwin</div>
+                  <div>S Sreesanth</div>
+</div>
