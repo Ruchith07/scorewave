@@ -6,13 +6,14 @@ function App() {
 
   return (
     <div className="App">
-      <p className="title">Score Card Application</p>
       <div className="TeamNameContainer">
         <div>India</div>
         <div>VS</div>
         <div>Pakistan</div>
       </div>  
-      <div className="Empty"></div>
+      <div className="upper">
+        <div className="inner-upper"></div>
+      </div>
       <div className="SummaryAndScorecardContainer">
             <div>SUMMARY</div>
             <div>SCORECARD</div>
