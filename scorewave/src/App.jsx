@@ -12,8 +12,11 @@ function App() {
         <div>Pakistan</div>
       </div>  
       <div className="upper">
-        <div className="divA">Team A</div>
+        <div className="divA">Team A
+          <div className="score"> score </div>
+        </div>
         <div className="divB">Team B</div>
+        
       </div>
       <div className="hello">
             <div className="SummaryAndScorecardContainer">
@@ -23,13 +26,10 @@ function App() {
       </div>
       <div className="Playerslist">
         <div className="sctitles">
-          <div>PLAYER NAME</div>
-          <div className="values">R</div>
-          <div className="values">B</div>
-          <div className="values">4's</div>
-          <div className="values">6's</div>
-          <div className="values">S.R</div>
+          <div>Batting</div>
         </div>
+
+        <div className="list"> 
                   <div>Sehwag</div>
                   <div>Ghambir</div>
                   <div>Kohli</div>
@@ -42,6 +42,30 @@ function App() {
                   <div>Ravi Ashwin</div>
                   <div>S Sreesanth</div>
         </div>
+
+        <div className="values">
+          <div className="runs">R
+            <div className="val_run">9</div>
+            <div className="val_run">6</div>
+          </div>
+          <div className="balls">B
+            <div className="val_ball">2</div>
+            <div className="val_ball">8</div>
+          </div>
+          <div className="fours">4's
+            <div className="val_4s">0</div>
+            <div className="val_4s">1</div>
+          </div>
+          <div className="sixes">6's
+            <div className="val_6s">1</div>
+            <div className="val_6s">0</div>
+          </div>
+          <div className="sr">S.R
+            <div className="val_sr">450.0</div>
+            <div className="val_sr">75.0</div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
