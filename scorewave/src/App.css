@@ -26,7 +26,7 @@ body{
     margin-left: 20rem;
     margin-right: 20rem;
     margin-bottom: 2px;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     background: rgb(107, 107, 107);
     font-size: 30px;
 }
@@ -86,9 +86,9 @@ body{
     margin-left: 20rem;
     margin-right: 20rem;
     padding: 2px;
-    border-left: 3px solid black;
+    /* border-left: 3px solid black;
     border-right: 3px solid black;
-    border-top: 2px solid black;
+    border-top: 2px solid black; */
     color: black;
     justify-content: left;
 }
@@ -111,15 +111,17 @@ body{
     font-size: 20px;
     margin-left: 20rem;
     margin-right: 20rem;
-    border: solid black;
-    padding-bottom: 100px;
+    padding-right: 2px;
+    /* border: solid black; */
+    padding-bottom: 50px;
     /* background: rgb(192, 100, 100); */
 }
 
 .Playerslist .sctitles {
     display: grid;
+    position: relative;
     height: 20px; /* Each block takes half the container's height */
-    width: 235px;
+    width: 120px;
     margin-left: 10px;
     margin-right: 1px;
     margin-top: 2px;
@@ -128,6 +130,7 @@ body{
 
 .Playerslist .values{
     display: grid;
+    position: inherit;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-row: 1 / span 2; 
     grid-column: 2;
@@ -139,12 +142,20 @@ body{
 }
 
 .Playerslist .list{
+    position: inherit;
     display: grid;
-    /* background: blue; */
     margin-left: 10px;
     margin-right: 1px;
-    height: 100%; /* Each block takes half the container's height */
-    width: 235px;
+    height: 100%;
+    width: 120px;
+    /* background: blue; */
+}
+
+.Playerslist .values .runs, .balls, .fours, .sixes, .sr{
+    display:block;
+    flex-direction: column;
+    /* background-color: white; */
+    position: inherit;
 }
 
 .title{
@@ -162,7 +173,10 @@ body{
 /* ****************************************************** */
 /* ****************************************************** */
 /* ****************************************************** */
-@media screen and (max-width: 984px) {
+
+
+
+@media screen and (max-width: 950px) {
     .TeamNameContainer {
         display: grid;
         grid-template-rows: 1fr; 
@@ -218,22 +232,52 @@ body{
 
     .Playerslist {
         display: grid;
-        grid-template-rows: 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1px;
         font-size: 20px;
         margin-left: 2rem;
         margin-right: 2rem;
-        border: solid black;
-        color: black;
-        justify-content: left;
+        border: solid rgb(169,169,169);
+        /* background: rgb(192, 100, 100); */
     }
-
+    
     .Playerslist .sctitles {
         display: grid;
-        grid-template-columns:25fr 5fr 5fr 5fr 5fr 1fr;
-        grid-gap: 5px;
-        font-size: 20px;
-        place-items: right;
-        border-bottom: 3px solid black;
+        height: 20px; /* Each block takes half the container's height */
+        width: 150px;
+        margin-left: 10px;
+        margin-right: 1px;
+        margin-top: 2px;
+        /* background: green; */
+    }
+    
+    .Playerslist .values{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-row: 1 / span 2; 
+        grid-column: 2;
+        margin-top: px;
+        margin-right: 1px;
+        height: 270px;
+        width: 130px;
+        /* background: yellow; */
+    }
+    
+    .Playerslist .list{
+        display: grid;
+        /* background: blue; */
+        margin-left: 10px;
+        margin-right: 1px;
+        height: 100%; /* Each block takes half the container's height */
+        width: 120px;
+    }
+
+    .Playerslist .values .runs, .balls, .fours, .sixes, .sr{
+        display:block;
+        flex-direction: column;
+        width: 30px;
+        /* background-color: white; */
+        position: inherit;
     }
 
     .TeamNameContainer .teams{

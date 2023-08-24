@@ -12,9 +12,7 @@ function App() {
         <div>Pakistan</div>
       </div>  
       <div className="upper">
-        <div className="divA">Team A
-          <div className="score"> score </div>
-        </div>
+        <div className="divA">Team A</div>
         <div className="divB">Team B</div>
         
       </div>
@@ -36,7 +34,7 @@ function App() {
                   <div>Yuvraj Singh</div>
                   <div>Suresh Raina</div>
                   <div>Yusuf Pathan</div>
-                  <div>Harbhajan Singh</div>
+                  <div>Harbhajan S</div>
                   <div>Zaheer Khan</div>
                   <div>Ashish Nehra</div>
                   <div>Ravi Ashwin</div>
