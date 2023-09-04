@@ -33,15 +33,19 @@ function App() {
       </div>
       <div className="Playerslist">
         <div className="sctitles">
-          <div className="heading">Batting</div>
+          <div className="heading"></div>
         </div>
 
-        <div className="list"> 
-                  <div className="random"></div>
-                  <div className="CandB">
+        
+
+        <div className="values">
+
+          <div className="list"> Batsman
+          <div className="CandB">
                     <div>Sehwag</div>
                     <div className="bywhom">c & b Afridi</div>
                   </div>
+                  
 
                   <div className="CandB">
                   <div>Ghambir</div>
@@ -54,7 +58,7 @@ function App() {
                   </div>
 
                   <div className="CandB">
-                  <div>Yuvraj Singh</div>
+                  <div>Yuvraj Singhhhhhhhhh</div>
                     <div className="bywhom">c & b Afridi</div>
                   </div>
 
@@ -92,9 +96,8 @@ function App() {
                   <div>S Sreeshanth</div>
                     <div className="bywhom">c & b Afridi</div>
                   </div>
-        </div>
+          </div>
 
-        <div className="values">
           <div className="runs">R
             <div className="val_run">9</div>
             <div className="val_run">6</div>
@@ -161,7 +164,6 @@ function App() {
             <div className="val_sr">450.0</div>
           </div>
         </div>
-        <div >Total Runs</div>
       </div>
     </div>
   )
